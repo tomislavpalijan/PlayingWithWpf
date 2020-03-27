@@ -1,0 +1,25 @@
+﻿<Window x:Class="Playground.Wpf.ShellWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Playground.Wpf"
+        mc:Ignorable="d" 
+        d:DataContext="{x:Static local:ShellWindowViewModel.Instance}"
+        Title="{Binding Title}" Height="450" Width="800">
+    <Grid>
+        
+        <!--<DataGrid Margin="5, 35, 5, 10" 
+                  DataContext="{Binding ItemAttributes}"
+                  HorizontalAlignment="Stretch"
+                  AutoGenerateColumns="True"
+                  ItemsSource="{Binding}"  
+                  VerticalAlignment="Stretch">
+        </DataGrid>-->
+        <!--<ListView ItemsSource="{Binding ItemAttributes}">
+            <ListView.ItemTemplate>
+                
+            </ListView.ItemTemplate>
+        </ListView>-->
+    </Grid>
+</Window>
