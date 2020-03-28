@@ -13,7 +13,7 @@ namespace Playground.Wpf.Model
             UpperLimit = 23.998,
             LowerLimit = 23.432,
             IsCurrentValueValid = true,
-            Unit = "mm",
+            Unit = "kg",
             Measurements = new ObservableCollection<Measurement>()
             {
                 new Measurement (23.4342, new DateTime(2020, 3, 27, 12, 43, 55), true),

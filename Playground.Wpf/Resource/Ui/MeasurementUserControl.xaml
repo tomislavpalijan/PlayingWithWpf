@@ -12,8 +12,19 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type ContentControl}">
-                        <Border>
-                            <TextBlock Text="{Binding Value}"/>
+                        <Border BorderThickness="0 0 0 1" BorderBrush="Black">
+                            
+                            <Grid>
+                                <TextBlock TextAlignment="Right" Foreground="Black" Text="{Binding MeasurementValue}">
+                                    <TextBlock.ToolTip>
+                                        <StackPanel Background="White">
+                                            <Label Content="{Binding MeasurementValue}"/>
+                                            <Label Content="{Binding IsValid}"/>
+                                            <Label Content="{Binding MeasureTime}"/>
+                                        </StackPanel>
+                                    </TextBlock.ToolTip>
+                                </TextBlock>
+                            </Grid>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>

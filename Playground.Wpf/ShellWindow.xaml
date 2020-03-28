@@ -4,22 +4,28 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Playground.Wpf"
+        xmlns:ui="clr-namespace:Playground.Wpf.Resource.Ui"
         mc:Ignorable="d" 
         d:DataContext="{x:Static local:ShellWindowViewModel.Instance}"
         Title="{Binding Title}" Height="450" Width="800">
     <Grid>
-        
-        <!--<DataGrid Margin="5, 35, 5, 10" 
-                  DataContext="{Binding ItemAttributes}"
-                  HorizontalAlignment="Stretch"
-                  AutoGenerateColumns="True"
-                  ItemsSource="{Binding}"  
-                  VerticalAlignment="Stretch">
-        </DataGrid>-->
-        <!--<ListView ItemsSource="{Binding ItemAttributes}">
-            <ListView.ItemTemplate>
-                
-            </ListView.ItemTemplate>
-        </ListView>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <ItemsControl ItemsSource="{Binding ItemCharacteristics}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <ui:ItemCharacteristicMeasurementControl Margin="2"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        </ScrollViewer>
     </Grid>
 </Window>

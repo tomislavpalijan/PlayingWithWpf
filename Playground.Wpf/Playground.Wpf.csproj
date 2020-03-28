@@ -59,11 +59,11 @@
     <Compile Include="Base\BaseViewModel.cs" />
     <Compile Include="Model\ItemCharacteristic.cs" />
     <Compile Include="Model\Measurement.cs" />
-    <Compile Include="Resource\Ui\ItemAttributeMeasurementUserControl.xaml.cs">
-      <DependentUpon>ItemAttributeMeasurementUserControl.xaml</DependentUpon>
+    <Compile Include="Resource\Ui\ItemCharacteristicMeasurementControl.xaml.cs">
+      <DependentUpon>ItemCharacteristicMeasurementControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Resource\Ui\ItemAttributeUserControl.xaml.cs">
-      <DependentUpon>ItemAttributeUserControl.xaml</DependentUpon>
+    <Compile Include="Resource\Ui\ItemCharacteristicUserControl.xaml.cs">
+      <DependentUpon>ItemCharacteristicUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Resource\Ui\MeasurementUserControl.xaml.cs">
       <DependentUpon>MeasurementUserControl.xaml</DependentUpon>
@@ -73,11 +73,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Resource\Ui\ItemAttributeMeasurementUserControl.xaml">
+    <Page Include="Resource\Ui\ItemCharacteristicMeasurementControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Resource\Ui\ItemAttributeUserControl.xaml">
+    <Page Include="Resource\Ui\ItemCharacteristicUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -10,20 +10,20 @@ namespace Playground.Wpf.Model
 
         public Measurement(double measure, DateTime measureTime, bool isValid)
         {
-            Value = measure;
+            MeasurementValue = measure;
             MeasureTime = measureTime;
             IsValid = isValid;
         }
 
-        private double _value;
+        private double _measurementValue;
 
-        public double Value
+        public double MeasurementValue
         {
-            get { return _value; }
+            get { return _measurementValue; }
             set
             {
-                _value = value;
-                OnPropertyChanged(nameof(Value));
+                _measurementValue = value;
+                OnPropertyChanged(nameof(MeasurementValue));
             }
         }
 

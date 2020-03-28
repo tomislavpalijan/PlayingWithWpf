@@ -12,7 +12,7 @@ namespace Playground.Wpf
             base.OnStartup(e);
 
             var mainWindow = new ShellWindow();
-            var vm = new ShellWindowViewModel();
+            var vm = ShellWindowViewModel.Instance;
 
             mainWindow.DataContext = vm;
 
