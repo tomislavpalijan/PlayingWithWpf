@@ -29,5 +29,5 @@
         </Style>
     </UserControl.Resources>
 
-    <ContentControl Width="125" Style="{StaticResource MeasurementStyle}" DataContext="{x:Static model:ItemAttribute.Instance }"/>
+    <ContentControl Width="125" Style="{StaticResource MeasurementStyle}" DataContext="{x:Static model:ItemCharacteristic.Instance }"/>
 </UserControl>

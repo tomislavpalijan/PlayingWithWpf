@@ -5,9 +5,9 @@ using System;
 namespace Playground.Wpf.Model
 {
 
-    public class ItemAttribute : BaseModel
+    public class ItemCharacteristic : BaseModel
     {
-        public static ItemAttribute Instance => new ItemAttribute() {
+        public static ItemCharacteristic Instance => new ItemCharacteristic() {
             Name ="Weight",
             CurrentValue = 23.4342,
             UpperLimit = 23.998,
@@ -25,7 +25,7 @@ namespace Playground.Wpf.Model
             }
         };
 
-        public ItemAttribute()
+        public ItemCharacteristic()
         {
             Measurements = new ObservableCollection<Measurement>();
         }
@@ -34,7 +34,7 @@ namespace Playground.Wpf.Model
 
         private string _unit;
         /// <summary>
-        /// Gets or sets the unit of <see cref="ItemAttribute"/>
+        /// Gets or sets the unit of <see cref="ItemCharacteristic"/>
         /// </summary>
         public string Unit  
         {
@@ -49,7 +49,7 @@ namespace Playground.Wpf.Model
 
         private string _name;
         /// <summary>
-        /// Gets or sets the name of <see cref="ItemAttribute"/>
+        /// Gets or sets the name of <see cref="ItemCharacteristic"/>
         /// </summary>
         public string Name
         {
@@ -64,7 +64,7 @@ namespace Playground.Wpf.Model
         private double _currentValue;
 
         /// <summary>
-        /// Gets or sets the current value of <see cref="ItemAttribute"/>
+        /// Gets or sets the current value of <see cref="ItemCharacteristic"/>
         /// </summary>
         public double CurrentValue
         {
@@ -78,7 +78,7 @@ namespace Playground.Wpf.Model
 
         private double _upperLimit;
         /// <summary>
-        /// Gets or sets the upper limit of <see cref="ItemAttribute"/>
+        /// Gets or sets the upper limit of <see cref="ItemCharacteristic"/>
         /// </summary>
         public double UpperLimit
         {
@@ -93,7 +93,7 @@ namespace Playground.Wpf.Model
 
         private double _lowerLimit;
         /// <summary>
-        /// Gets or sets the lower limit of <see cref="ItemAttribute"/>
+        /// Gets or sets the lower limit of <see cref="ItemCharacteristic"/>
         /// </summary>
         public double LowerLimit
         {
@@ -107,7 +107,7 @@ namespace Playground.Wpf.Model
 
         private bool _isCurrentValueValid;
         /// <summary>
-        /// Gets is the current value of <see cref="ItemAttribute"/> valid
+        /// Gets is the current value of <see cref="ItemCharacteristic"/> valid
         /// </summary>
         public bool IsCurrentValueValid
         {

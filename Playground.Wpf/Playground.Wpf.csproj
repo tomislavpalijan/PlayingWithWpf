@@ -57,7 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Base\BaseModel.cs" />
     <Compile Include="Base\BaseViewModel.cs" />
-    <Compile Include="Model\ItemAttribute.cs" />
+    <Compile Include="Model\ItemCharacteristic.cs" />
     <Compile Include="Model\Measurement.cs" />
     <Compile Include="Resource\Ui\ItemAttributeMeasurementUserControl.xaml.cs">
       <DependentUpon>ItemAttributeMeasurementUserControl.xaml</DependentUpon>
